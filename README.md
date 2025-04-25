@@ -1,2 +1,2 @@
-# webhook-ws
-webhook-webhook
+# whatsapp-webhook
+WhatsApp Manager Phone numbers
