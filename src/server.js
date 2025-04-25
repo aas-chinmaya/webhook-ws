@@ -4,15 +4,23 @@ const logger = require('./config/logger');
 const securityMiddleware = require('./middleware/security');
 const webhookRoutes = require('./routes/webhookRoutes');
 const errorHandler = require('./middleware/errorHandler');
+const Webhook=require('./api/webhook')
 
 const app = express();
 //const port = process.env.PORT || 3000;
-
+const RATE_LIMIT_MAX=100;
+const RATE_LIMIT_WINDOW=900000;
+const ALLOWED_ORIGINS="https://your-domain.com";
 // Apply security middleware
 app.use(securityMiddleware);
 
 // Routes
 app.use('/api', webhookRoutes);
+
+// Root route handler
+app.get('/', (req, res) => {
+    res.status(200).json({ message: 'WhatsApp Webhook Server is running', status: 'OK' });
+});
 
 // Error handling
 app.use(errorHandler);
@@ -28,12 +36,10 @@ process.on('unhandledRejection', (err) => {
     logger.error('Unhandled Rejection:', err);
     process.exit(1);
 });
- const port = process.env.PORT || 9000;
+ const port = 5000;
 
-// app.listen(9000, () => {
-//     logger.info(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
-// });
+
 
 app.listen(port, () => {    // Changed 9000 to port variable
-    logger.info(`Server running in ${process.env.NODE_ENV} mode on port ${port}`);
+    logger.info(`Server running in live mode on port ${port}!`);
 });

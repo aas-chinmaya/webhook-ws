@@ -1,6 +1,6 @@
 const validateWebhookRequest = (req, res, next) => {
     // Skip validation for development environment
-    if (process.env.NODE_ENV === 'development') {
+    if ( 'development') {
         return next();
     }
 

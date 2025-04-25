@@ -1,5 +1,5 @@
 const axios = require('axios');
-const whatsappConfig = require('../config/whatsapp');
+const whatsappConfig = require('../../src/config/whatsapp');
 
 class WhatsappService {
     constructor() {

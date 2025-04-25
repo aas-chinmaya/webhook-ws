@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const { handleWebhook, verifyWebhook } = require('../controllers/webhookController');
-const validateRequest = require('../middleware/validateRequest');
-const validateWebhook = require('../middleware/validateWebhook');
-const rateLimiter = require('../middleware/rateLimiter');
+const { handleWebhook, verifyWebhook } = require('../../src/controllers/webhookController');
+const validateRequest = require('../../src/middleware/validateRequest');
+const validateWebhook = require('../../src/middleware/validateWebhook');
+const rateLimiter = require('../../src/middleware/rateLimiter');
 
 // Health check endpoint
 router.get('/health', (req, res) => {

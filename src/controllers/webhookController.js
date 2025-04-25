@@ -1,6 +1,6 @@
-const logger = require('../config/logger');
-const whatsappService = require('../services/whatsappService');
-const whatsappConfig = require('../config/whatsapp');
+const logger = require('../../src/config/logger');
+const whatsappService = require('../../src/services/whatsappService');
+const whatsappConfig = require('../../src/config/whatsapp');
 
 const handleWebhook = async (req, res, next) => {
     try {

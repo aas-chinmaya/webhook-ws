@@ -1,4 +1,4 @@
-const messageSchemas = require('../models/requestSchema');
+const messageSchemas = require('../../src/models/requestSchema');
 
 const validateRequest = (req, res, next) => {
     const { type } = req.body;

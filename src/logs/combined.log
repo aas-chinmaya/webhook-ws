@@ -1,0 +1,18 @@
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:06:18.999Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:06:35.739Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:08:15.883Z"}
+{"level":"info","message":"Server running in live mode on port !","timestamp":"2025-04-25T08:08:24.520Z"}
+{"level":"info","message":"Server running in live mode on port $!","timestamp":"2025-04-25T08:08:26.802Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:08:30.288Z"}
+{"error":{"error":{"code":132001,"error_data":{"details":"template name (contact_us_support) does not exist in en_US","messaging_product":"whatsapp"},"fbtrace_id":"AlShUhbMAl7q87zuR7mrkkF","message":"(#132001) Template name does not exist in the translation","type":"OAuthException"}},"level":"error","message":"Error in webhook handler: (#132001) Template name does not exist in the translation","status":404,"success":false,"timestamp":"2025-04-25T08:11:23.710Z"}
+{"level":"error","timestamp":"2025-04-25T08:11:23.712Z"}
+{"customerMobile":"919348962204","level":"info","message":"Message sent successfully","timestamp":"2025-04-25T08:12:42.998Z","type":"template"}
+{"customerMobile":"919348962204","level":"info","message":"Message sent successfully","timestamp":"2025-04-25T08:15:17.024Z","type":"template"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:21:20.734Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:27:10.218Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:27:18.427Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:27:26.340Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:27:34.022Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:31:01.798Z"}
+{"level":"info","message":"Server running in live mode on port 5000!","timestamp":"2025-04-25T08:31:08.176Z"}
+{"customerMobile":"919348962204","level":"info","message":"Message sent successfully","timestamp":"2025-04-25T08:31:15.274Z","type":"template"}
