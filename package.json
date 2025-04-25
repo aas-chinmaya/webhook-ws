@@ -5,7 +5,8 @@
   "scripts": {
     "start": "set NODE_ENV=production&& node src/server.js",
     "dev": "set NODE_ENV=development&& nodemon src/server.js",
-    "test": "jest"
+    "test": "jest",
+    "build": "node src/server.js"
   },
   "keywords": [
     "whatsapp",
