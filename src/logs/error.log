@@ -1,2 +1,0 @@
-{"error":{"error":{"code":132001,"error_data":{"details":"template name (contact_us_support) does not exist in en_US","messaging_product":"whatsapp"},"fbtrace_id":"AlShUhbMAl7q87zuR7mrkkF","message":"(#132001) Template name does not exist in the translation","type":"OAuthException"}},"level":"error","message":"Error in webhook handler: (#132001) Template name does not exist in the translation","status":404,"success":false,"timestamp":"2025-04-25T08:11:23.710Z"}
-{"level":"error","timestamp":"2025-04-25T08:11:23.712Z"}

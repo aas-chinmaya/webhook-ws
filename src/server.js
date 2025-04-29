@@ -11,8 +11,24 @@ const app = express();
 const RATE_LIMIT_MAX=100;
 const RATE_LIMIT_WINDOW=900000;
 const ALLOWED_ORIGINS="https://your-domain.com";
+// Add request logging
+app.use((req, res, next) => {
+    logger.info(`Incoming ${req.method} request to ${req.url}`);
+    next();
+});
+
 // Apply security middleware
 app.use(securityMiddleware);
+
+// Add response logging
+app.use((req, res, next) => {
+    const originalSend = res.send;
+    res.send = function (data) {
+        logger.info(`Response sent for ${req.url}`);
+        return originalSend.apply(res, arguments);
+    };
+    next();
+});
 
 // Routes
 app.use('/api', webhookRoutes);
