@@ -1,7 +1,7 @@
 # whatsapp-webhook
 WhatsApp Manager Phone numbers
 
-## Deploying to Vercel
+
 
 1. **Project Structure**: This project is now compatible with Vercel serverless functions. The main webhook endpoint is located at `api/webhook.js`.
 2. **Environment Variables**: Set the following environment variables in your Vercel dashboard:
